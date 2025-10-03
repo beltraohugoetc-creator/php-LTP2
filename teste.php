@@ -7,16 +7,13 @@
     <title>Home</title>
 </head>
 <body>
-
 <?php
 
 $ano = 1980;
-
 $nome = 'Joe';
-
 $peso = 100;
-
 $num = 1;
+$ordem = true;
 
 const PAÍS = "Índia";
 
@@ -26,8 +23,14 @@ Foi o $num elefante ser <br>
 aprisionado e levado para a <br>
 ".PAÍS.".";
 
-?>
+$ano2025 = 2025;
+$anospassados = $ano2025 - $ano;
 
-    
+echo "<br> <br> $anospassados";
+
+$pesoatual = $peso + $anospassados * 3;
+
+echo "<br> <br> O peso de $nome atualmente é: $pesoatual kg.";
+?>    
 </body>
 </html>
